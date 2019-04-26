@@ -24,6 +24,7 @@ Combining these two we come up with the TF-IDF score (w) for a word in a documen
 
 ### Walkthrough the code
 The preprocess function converts the text to lowercase and removes all the stop words from the text data.
+    
     def preprocess(text):
     stop_words = stopwords.words('english')
     text = str(text)
