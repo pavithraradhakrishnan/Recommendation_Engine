@@ -35,16 +35,15 @@ def finalhome(request):
 
 
 def outputformat(request):
+
     if request.method == "POST":
-        print('*'*50)
+        print('*' * 50)
         print(request.POST)
         query = request.POST['query']
-        result = movie_search(query)
-        return HttpResponse(result.to_html())
-        #return render("search/result.html", result.to_html())
+        original_title,overview,cosine_scores = movie_search(query)
+        return render(request, 'search/classify_scores_output.html', {'result': zip(original_title,overview,cosine_scores)})
     else:
         print("no post")
-
         return redirect('/')
 
 

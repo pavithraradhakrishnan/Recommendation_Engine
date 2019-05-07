@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333}
+
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+form {
+margin: 0 auto;
+width:80%;
+}
+h1{
+text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+}
+h8{
+text_align:center;
+font-family: Arial, Helvetica, sans-serif;
+}
+.cen {
+  text-align: center;
+  max-width: 500px;
+  margin: auto;
+  background-image: url(/img/movieee.jfif);
+
+
+
+
+}
+</style>
+</head>
+
+<body >
+<div class="topnav">
+    <a href="/recommendation">Recommend</a>
+    <a href="/behindthescene">Classification reports</a>
+    <a href="/classify">Classify</a>
+  <a href="/search">Search</a>
+
+  <a class="active" href="/finalhome">Home</a>
+</div>
+
+<div style="padding-left:16px" class = "cen">
+  <h1>&nbsp;&nbsp;CLASSIFICATION RESULT</h1>
+  <h8>&nbsp;&nbsp;&nbsp;</h8>
+  <br>
+  <br>
+
+    {% load staticfiles %}
+    <!--<img src="{% static "plot3.png" %}" alt="My image"/> -->
+    <img src="data:image/png;base64,{{ output|safe }}">
+    <img src="{{ output }}" alt="My image"/>
+</div>
+</body>
+</html>
