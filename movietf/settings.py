@@ -25,7 +25,7 @@ SECRET_KEY = 'yzfwkl*16po9xqlut8k8%ruxc%^$3@4iffn7=w5$io=k_6kzrf'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [azuremovie.azurewebsites.net]
 
 
 # Application definition
