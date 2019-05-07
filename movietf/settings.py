@@ -21,7 +21,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'yzfwkl*16po9xqlut8k8%ruxc%^$3@4iffn7=w5$io=k_6kzrf'
-
+STATIC_ROOT =os.path.join(BASE_DIR,'static_files')
+STATIC_URL = '/static/'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -106,6 +107,8 @@ AUTH_PASSWORD_VALIDATORS = [
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
+PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
+STATIC_ROOT = os.path.join(PROJECT_DIR, 'static')
 
 TIME_ZONE = 'UTC'
 
