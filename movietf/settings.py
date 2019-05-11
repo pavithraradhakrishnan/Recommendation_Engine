@@ -26,7 +26,7 @@ STATIC_URL = '/static/'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+#ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -119,7 +119,7 @@ USE_L10N = True
 USE_TZ = True
 
 
-ALLOWED_HOSTS = ['finaldjangoproject11.herokuapp.com']
+#ALLOWED_HOSTS = ['finaldjangoproject11.herokuapp.com']
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 

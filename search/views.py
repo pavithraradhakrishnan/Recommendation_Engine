@@ -1,6 +1,7 @@
 from django.shortcuts import render,redirect
 from django.http import HttpResponse
 from utils.whsh1 import *
+from utils.movie_recommendations import *
 #from django.contrib.auth.forms import se
 
 from subprocess import Popen, PIPE, STDOUT
@@ -30,9 +31,20 @@ def home(request):
 def finalhome(request):
     return render(request,'search/finalhome.html')
 
+def recommendationoutput(request):
 
+    if request.method == "POST":
+        print('*' * 50)
+        print(request.POST)
+        moviename = request.POST['query']
+        x,y = result(moviename)
+        return render(request, 'search/recommendationoutput.html', {'result': zip(x,y)})
+    else:
+        print("no post")
 
-
+        return redirect('/')
+def recommendation(request):
+    return render(request,'search/recommendation.html')
 
 def outputformat(request):
 

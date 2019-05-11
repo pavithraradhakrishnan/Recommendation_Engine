@@ -18,13 +18,16 @@ from . import views
 from django.urls import path
 
 urlpatterns = [
+
     path('home/',views.home,name='search-home'),
     path('about/',views.about,name='search-about'),
-
-
+    path('search/', views.finalhome, name='search-finalhome'),
+    #path('classify/', views.classify, name='classify'),
+    #path('classifyoutput/', views.classifyoutput, name='classifyoutput'),
+    path('recommendation/', views.recommendation, name='recommendation'),
+    path('recommendationoutput/', views.recommendationoutput, name='recommendationoutput'),
+    #path('behindthescene/', views.behindthescene, name='behindthescene'),
     path('outputformat/',views.outputformat,name ='search-outputformat'),
-
     path('',views.finalhome,name='search-finalhome'),
-
 
 ]
