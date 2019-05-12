@@ -2,9 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="280d505a-ec46-4980-8565-695ebda7d6cb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tmdb_5000_credits.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmdb_5000_movies.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/movie_recommendations.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pavi.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/search/static/Fscore.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/search/static/accuracy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/search/static/plot2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/search/static/plot3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/search/static/precision.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/search/static/probability.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/search/static/recall.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/classifier.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/kag_my1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/overview_clean.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/pipe_dict.pkl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/movietf/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/movietf/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/search/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/search/urls.py" afterDir="false" />
@@ -64,50 +73,87 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-664648949">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="csv" value="1" />
+          <entry key="pkl" value="1" />
+          <entry key="py" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSV" value="1" />
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="Python" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="py" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Python" value="3" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/whsh1.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/movietf/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="51" selection-start-line="51" selection-end-line="51" />
-              <folding>
-                <element signature="e#2#20#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="344">
+              <caret line="126" lean-forward="true" selection-start-line="126" selection-end-line="126" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/movie_recommendations.py">
+        <entry file="file://$PROJECT_DIR$/utils/kag_my1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/pipe_dict.pkl">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/search/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
+            <state relative-caret-position="680">
               <caret line="46" column="55" selection-start-line="46" selection-start-column="55" selection-end-line="46" selection-end-column="55" />
-              <folding>
-                <element signature="e#0#44#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/movietf/settings.py">
+        <entry file="file://$PROJECT_DIR$/search/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+            <state relative-caret-position="442">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pavi.csv">
+          <provider selected="true" editor-type-id="csv-text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -125,15 +171,6 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/movietf/urls.py">
           <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/search/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-            </state>
-          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -183,18 +220,13 @@
         <subPane>
           <expand>
             <path>
-              <item name="SearchEngine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SearchEngine" type="462c0819:PsiDirectoryNode" />
+              <item name="Recommendation_Engine1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Recommendation_Engine1" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SearchEngine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SearchEngine" type="462c0819:PsiDirectoryNode" />
+              <item name="Recommendation_Engine1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Recommendation_Engine1" type="462c0819:PsiDirectoryNode" />
               <item name="movietf" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SearchEngine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SearchEngine" type="462c0819:PsiDirectoryNode" />
-              <item name="search" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -208,9 +240,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Certificates\Ex_Files_TensorFlow\Ex_Files_TensorFlow\Recommendation_Engine1" />
+      <recent name="C:\Certificates\Ex_Files_TensorFlow\Ex_Files_TensorFlow\Recommendation_Engine1\search" />
+      <recent name="C:\Certificates\Ex_Files_TensorFlow\Ex_Files_TensorFlow\Recommendation_Engine1\search\static" />
+      <recent name="C:\Certificates\Ex_Files_TensorFlow\Ex_Files_TensorFlow\Recommendation_Engine1\utils" />
       <recent name="C:\Certificates\Ex_Files_TensorFlow\Ex_Files_TensorFlow\SearchEngine" />
-      <recent name="C:\Certificates\Ex_Files_TensorFlow\Ex_Files_TensorFlow\SearchEngine\utils" />
-      <recent name="C:\Certificates\Ex_Files_TensorFlow\Ex_Files_TensorFlow\SearchEngine\search\templates\search" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -241,7 +275,7 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30402684" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.31275168" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -325,8 +359,52 @@
     <entry file="file://$PROJECT_DIR$/search/apps.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/utils/whsh1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/movie_recommendations.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movietf/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="126" lean-forward="true" selection-start-line="126" selection-end-line="126" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/kag_my1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/pipe_dict.pkl">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="46" column="55" selection-start-line="46" selection-start-column="55" selection-end-line="46" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pavi.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/whsh1.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -338,51 +416,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/movietf/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/whsh1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
-          <folding>
-            <element signature="e#2#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/movie_recommendations.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/movietf/urls.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/tmdb_5000_credits.csv">
       <provider selected="true" editor-type-id="LargeFileEditor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/search/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/search/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="46" column="55" selection-start-line="46" selection-start-column="55" selection-end-line="46" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/movietf/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/movietf/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
