@@ -120,6 +120,19 @@ I have designed by web page in django and I have integrated my python script for
 As you can see the most similar result is the thrid one, which is most similar to the query
 ![](images/search-result.png)
 
+# HOW TO DEPLOY THE CODE:
+1.Just copy the github url .In this is case the URL would be 'https://github.com/pavithraradhakrishnan/Recommendation_Engine' And on Pycharm, from the menu bar choose VCS ->Check out from version control -> Git.
+2.And when prompted for URL give the URL mentioned earlier and click on clone.
+3.After it's done you will get a pop message asking for permission to open the prespective. Click ok.
+4. Now we have the copy of the project in pycharm.
+5.To run the project from the terminal the command is python manage.py runserver
+6.Click on the local host url that appears on the teminal.
+7. Now you can use the application in from your local host. 
+8. Please check the you tube video for more details about accessing the application
+
+#LINK TO PROJECT ON GOOGLE CLOUD:
+
+http://35.222.157.177
 
 # PART 2  MOVIE GENRE CLASSIFICATION BASED ON PLOT
 INTRODUCTION: 
@@ -271,6 +284,20 @@ Each fold is then used once as a validation while the k - 1 remaining folds form
 ![](images/classify-report-4.png)
 ![](images/classify-report-5.png)
 
+
+# HOW TO DEPLOY THE CODE:
+1.Just copy the github url .In this is case the URL would be 'https://github.com/pavithraradhakrishnan/Recommendation_Engine' And on Pycharm, from the menu bar choose VCS ->Check out from version control -> Git.
+2.And when prompted for URL give the URL mentioned earlier and click on clone.
+3.After it's done you will get a pop message asking for permission to open the prespective. Click ok.
+4. Now we have the copy of the project in pycharm.
+5.To run the project from the terminal the command is python manage.py runserver
+6.Click on the local host url that appears on the teminal.
+7. Now you can use the application in from your local host. 
+8. Please check the you tube video for more details about accessing the application
+
+#LINK TO PROJECT ON GOOGLE CLOUD:
+
+http://35.222.157.177
 # PART III -RECOMMENDATION SYSTEM:
 ## CONTENT BASED FILTERING:
 Here I have used the content of the movies to find the similar movies for recommendation.
@@ -348,6 +375,20 @@ Now here we ll use a Count vectorizer instead of TF-IDF because we don't have to
 ![](images/resommendation.png)
 ![](images/Recommendation-result.png)
 
+
+# HOW TO DEPLOY THE CODE:
+1.Just copy the github url .In this is case the URL would be 'https://github.com/pavithraradhakrishnan/Recommendation_Engine' And on Pycharm, from the menu bar choose VCS ->Check out from version control -> Git.
+2.And when prompted for URL give the URL mentioned earlier and click on clone.
+3.After it's done you will get a pop message asking for permission to open the prespective. Click ok.
+4. Now we have the copy of the project in pycharm.
+5.To run the project from the terminal the command is python manage.py runserver
+6.Click on the local host url that appears on the teminal.
+7. Now you can use the application in from your local host. 
+8. Please check the you tube video for more details about accessing the application
+
+#LINK TO PROJECT ON GOOGLE CLOUD:
+
+http://35.222.157.177
  
  
     
