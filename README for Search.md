@@ -281,6 +281,12 @@ We will compute pairwise similarity scores for all movies based on their plot de
 ## WALK THROUGH THE CODE
   
  First we remove the stop words and calculate the TF_IDF matrix and calculate the cosine similiarities.We will be using the cosine similarity to calculate a numeric quantity that denotes the similarity between two movies.
+ 
+    tfidf = TfidfVectorizer(stop_words='english')
+    df_movies['overview'] = df_movies['overview'].fillna('')
+    tfidf_matrix = tfidf.fit_transform(df_movies['overview'])
+    cosine_sim = linear_kernel(tfidf_matrix, tfidf_matrix)
+    indices = pd.Series(df_movies.index, index=df_movies['title']).drop_duplicates()
 
 We form a meta data with the over view  field and then we use it find the similarity between movies.
 We need to do the following
@@ -289,8 +295,50 @@ Get the list of cosine similarity scores for that particular movie with all movi
 Sort the  list of tuples based on the similarity scores; that is, the second element.
 Get the top 10 elements of this list. Ignore the first element as it refers to self (the movie most similar to a particular movie is the movie itself).
 Return the titles corresponding to the indices of the top elements.
+       
+    def recommendations(title, cosine_sim=cosine_sim):
+      idx = indices[title]
+      sim_scores = list(enumerate(cosine_sim[idx]))
+      sim_scores = sorted(sim_scores, key=lambda x: x[1], reverse=True)
+      sim_scores = sim_scores[1:11]
+      movie_indices = [i[0] for i in sim_scores]
+      return df_movies['title'].iloc[movie_indices
 
-We will also find recommend movies with different meta data other than just overview.The function extract_director,get_list,get_production_company is used to extract the director,cast and production company respectively.This will form our new meta data. Now here we ll use a Count vectorizer instead of TF-IDF because we don't have to down weight if the actor acted in many movies.We will repeat the same process as mentioned  above and we will return the titles corresponding to the indices of top element.
+We will also find recommend movies with different meta data other than just overview.The function extract_director,get_list,get_production_company is used to extract the director,cast and production company respectively.This will form our new meta data.
+     
+     
+     def extract_director(x):
+    for i in x:
+        if i['job'] == 'Director':
+            return i['name']
+    return np.nan
+
+    def get_list(x):
+    if isinstance(x, list):
+        names = [i['name'] for i in x]
+        if len(names) > 3:
+            names = names[:3]
+        return names
+    return []
+
+    def get_production_company(x):
+    if isinstance(x, list):
+        names = [i['name'] for i in x]
+        if len(names) > 1:
+            names = names[:1]
+        return names
+        
+    df_movies['director'] = df_movies['crew'].apply(extract_director)
+    df_movies['production_companies'] = df_movies['production_companies'].apply(get_production_company)
+    features = ['cast', 'keywords', 'genres']
+    for feature in features:
+       df_movies[feature] = df_movies[feature].apply(get_list)
+
+    df_movies[['title', 'cast', 'director', 'keywords', 'genres','production_companies']].head(3)     
+
+
+
+Now here we ll use a Count vectorizer instead of TF-IDF because we don't have to down weight if the actor acted in many movies.We will repeat the same process as mentioned  above and we will return the titles corresponding to the indices of top element.
 ## SCREEN SHOT
 ![](images/resommendation.png)
 ![](images/Recommendation-result.png)
