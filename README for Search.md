@@ -334,11 +334,16 @@ We will also find recommend movies with different meta data other than just over
     for feature in features:
        df_movies[feature] = df_movies[feature].apply(get_list)
 
-    df_movies[['title', 'cast', 'director', 'keywords', 'genres','production_companies']].head(3)     
+    df_movies[['title', 'cast', 'director', 'keywords', 'genres','production_companies']].head(3)
+    
+    
 
 
 
 Now here we ll use a Count vectorizer instead of TF-IDF because we don't have to down weight if the actor acted in many movies.We will repeat the same process as mentioned  above and we will return the titles corresponding to the indices of top element.
+
+
+    
 ## SCREEN SHOT
 ![](images/resommendation.png)
 ![](images/Recommendation-result.png)
