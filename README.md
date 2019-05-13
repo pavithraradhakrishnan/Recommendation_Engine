@@ -1,3 +1,8 @@
+Youtube: https://youtu.be/vGrhnicdKPU
+
+Project link in google cloud - http://35.238.161.0/
+
+
 # PART I - SearchEngine
 This **search engine** is a part of  movie recommendation system. 
 ## How it works ??
@@ -132,7 +137,7 @@ As you can see the most similar result is the thrid one, which is most similar t
 
 #LINK TO PROJECT ON GOOGLE CLOUD:
 
-http://35.222.157.177
+http://35.238.161.0/
 
 # PART 2  MOVIE GENRE CLASSIFICATION BASED ON PLOT
 INTRODUCTION: 
@@ -297,7 +302,7 @@ Each fold is then used once as a validation while the k - 1 remaining folds form
 
 #LINK TO PROJECT ON GOOGLE CLOUD:
 
-http://35.222.157.177
+http://35.238.161.0/
 # PART III -RECOMMENDATION SYSTEM:
 ## CONTENT BASED FILTERING:
 Here I have used the content of the movies to find the similar movies for recommendation.
@@ -388,7 +393,7 @@ Now here we ll use a Count vectorizer instead of TF-IDF because we don't have to
 
 #LINK TO PROJECT ON GOOGLE CLOUD:
 
-http://35.222.157.177
+http://35.238.161.0/
  
  
     
