@@ -404,5 +404,4 @@ https://nlp.stanford.edu/IR-book/html/htmledition/stemming-and-lemmatization-1.h
 https://github.com/mayank408/TFIDF
 https://www.kaggle.com/guilherme93/nlp-movie-genre-prediction-from-plot/notebook
 https://www.kaggle.com/ibtesama/getting-started-with-a-movie-recommendation-system/data#Content-Based-Filtering
-https://github.com/Heetmadhu/Movie-Recommendation
 https://towardsdatascience.com/multinomial-naive-bayes-classifier-for-text-analysis-python-8dd6825ece67
